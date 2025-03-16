@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Form Styles */
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.task-form button:hover {
+  background-color: #218838;
+}
+
+/* Task Styles */
+.task {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.task h2 {
+  margin-top: 0;
+}
+
+.task-actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+.task.to-do {
+  background-color: #f8d7da;
+}
+.task.in-progress {
+  background-color: #fff3cd;
+}
+.task.completed {
+  background-color: #d4edda;
+}
+
+/* Dark Mode Styles */
+.app.dark {
+  background-color: #333;
+  color: #eee;
+}
+
+.app.dark input,
+.app.dark textarea,
+.app.dark select {
+  background-color: #555;
+  color: #eee;
+  border: 1px solid #777;
+}
+
+.app.dark button {
+  background-color: #444;
+  color: white;
+}
+
+.app.dark .task {
+  background-color: #444;
+  border-color: #666;
+}
